@@ -30,6 +30,7 @@ end
 
 def void_last_transaction
     last_item = @item_hash[@items[-1]]
+    
     last_item[1] !=nil ? @total -= last_item[0] * last_item[1] : @total -= last_item[0]
 end
 
